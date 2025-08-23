@@ -190,6 +190,12 @@ forever(function () {
             . . . . . . . f f . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Enemy)
-        transformSprites.rotateSprite(ratatonial_enemy, 90)
+    }
+    if (levels == 2) {
+        ratatonial_enemy.setPosition(randint(20, 500), randint(20, 500))
+        pause(500)
+    }
+    if (info.score() == 550) {
+        tiles.setCurrentTilemap(tilemap`level6`)
     }
 })
