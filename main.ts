@@ -151,9 +151,6 @@ forever(function () {
     enemi.setFlag(SpriteFlag.DestroyOnWall, true)
 })
 forever(function () {
-	
-})
-forever(function () {
     if (levels == 1) {
         sprites.destroy(enemi)
         enemi.setFlag(SpriteFlag.Invisible, true)
